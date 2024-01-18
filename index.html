@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealApp</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Halaman Category -->
+    <nav class="navbar" style="border-bottom: 1px solid #C4C4C4; background: #FFF;">
+        <div class="container-fluid m-2">
+            <a class="navbar-brand" href="">
+                <img src="image/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Menu
+            </a>
+        </div>
+    </nav>
+    <div id="categoryPage" class="container">
+        <div class="mt-5" style="position: relative;">
+            <img src="/image/bg-search-categories.svg" class="card-img" alt="...">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-align: center;">
+                <p style="color: #EEEEEE; font-size: 36px; font-family: Poppins; font-weight: 700; line-height: 52.74px; word-wrap: break-word;">
+                    Stop looking for a food recipe - find it.
+                </p>
+                <p style="color: #EEEEEE; font-size: 20px; font-family: Poppins; font-weight: 500; line-height: 20px;">
+                    Find useful food recipes and watch the video tutorial
+                </p>
+                <div class="row mt-32 mt-5">
+                    <div class="mx-auto" style="width: 100%;">
+                        <input type="text" id="categorySearchInput" class="form-control" placeholder="Search Categories" style="width: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <h2 class="mt-5">Browse by category</h2>
+        <div id="categoryList" class="row"></div>
+
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
